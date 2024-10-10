@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Google</title>
+  </head>
+  <body class="page">
+    <header>
+      <nav class="nav__list">
+        <ul class="nav__left">
+          <li>
+            <a
+              class="nav__link"
+              href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
+              target="_blank"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav__link"
+              href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US"
+              target="_blank"
+              >Store</a
+            >
+          </li>
+        </ul>
+        <ul class="nav__right">
+          <li>
+            <a
+              class="nav__link"
+              href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&emr=1&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&ifkv=ARpgrqeucDUHc5Q-JV-dqq2w1sjJ73Hgx4yeV05lkoYWUOc3fWMCKdlntKo2T2fDkYmtqkNKRKsFXQ&ddm=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+              target="_blank"
+              >Gmail</a
+            >
+          </li>
+          <li>
+            <a 
+            class="nav__link"
+            href="https://images.google.com/"
+            target="_blank">
+            Images</a>
+          </li>
+          <li>
+            <a href="https://labs.google.com/search" target="_blank">
+              <img
+                class="nav__image"
+                src="/blocks/labicon.png"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://about.google/products/" target="_blank">
+              <img
+                class="nav__image2"
+                src="/blocks/googleapps.png"
+                alt="Google apps"
+              />
+            </a>
+        </li>
+          <li>
+            <button class="nav__button" type="button">
+              <a
+                class="button__link"
+                href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=en&passive=true&ifkv=ARpgrqcMcQc1KPTWhpai-MhHak2-1WzXlyuQSWzFD9rEK_lroBI4SAWE8D-RThaqE7NfCW_06pUJ&ddm=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+              >
+                Sign in
+              </a>
+            </button>
+        </li>
+      </ul>
+      </nav>
+    </header>
+    <main>
+      <img
+        class="google__image"
+        alt="Google"
+        height="92"
+        src="/blocks/google.png"
+      />
+    <div id="the__bar">
+      <form class="fieldset__form">
+        <label for="search" class="form__label">
+          <input
+            type="text"
+            required
+            class="form__input"
+            id="clickSearch"
+            placeholder="Search Google or Type a URL"
+          />
+        </label>
+      </form>
+      <div class="submit__buttons">
+        <button type="submit" class="search__button" a href="#" onclick="googleclick()">Google Search</button>
+        <button 
+        type="submit" 
+        class="bk__button" 
+        a href="https://15d74190-43fd-4af6-b179-913c6f273f40-00-3elgviypqxpcm.spock.replit.dev/">
+        I'm Feeling like BK</button>
+      </div>
+    </div>
+    </main>
+    <footer>
+      <div>
+      <ul class="footer__links">
+        <p class="left_footer__links">
+            <p> <a class="footer__link" href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" target="_blank">Advertising</a></p>
+             <p> <a class="footer__link" href="https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/" target="_blank">Business</a></p>
+             <p> <a class="footer__link" href="https://www.google.com/search/howsearchworks/?fg=1" target="_blank">How Search Works</a></p>
+        </p>
+         <p class="right_footer__links">
+          <p> <a class="footer__link" href="https://policies.google.com/privacy?hl=en&fg=1" target="_blank"> Privacy</a></p>
+          <p><a class="footer__link" href="https://policies.google.com/terms?hl=en&fg=1" target="_blank">Terms</a></p>
+          <p><a class="footer__link" href="https://www.google.com/preferences?hl=en&fg=1" target="_blank">Settings</a></p>
+         </p>
+       </ul>
+       </div>
+      </ul>
+    </footer>
+    <script src="./scripts.js">
+        const googleClickSearch = document.getElementById("clicksearch");
+        const theBar = document.getElementById("the__bar")
+        const url = ("https://www.google.com/search?q=google&sca_esv=9591cd56803235d2&sxsrf=ADLYWIIIIlqJGnzvlSdh7X0RrJu7GvhEmg%3A1728240671096&source=hp&ei=H9wCZ6H1A63jwN4Pwej56Aw&iflsig=AL9hbdgAAAAAZwLqLwFsPgLjLH5UJ-HtGQNi5okmjTsb&ved=0ahUKEwjhgKSatvqIAxWtMdAFHUF0Hs0Q4dUDCB8&oq=googl&gs_lp=Egdnd3Mtd2l6IgVnb29nbCoCCAEyChAjGIAEGCcYigUyERAuGIAEGLEDGNEDGIMBGMcBMhAQABiABBixAxiDARgUGIcCMgsQABiABBixAxiDATIIEAAYgAQYsQMyCxAAGIAEGLEDGIMBMggQABiABBixAzINEAAYgAQYsQMYFBiHAjIIEAAYgAQYsQMyChAAGIAEGEMYigVI8hZQoQNYwA1wAXgAkAEAmAFnoAGyA6oBAzQuMbgBAcgBAPgBAZgCBqAC2gOoAgrCAgcQIxgnGOoCwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICEBAAGIAEGLEDGEMYgwEYigXCAg4QLhiABBixAxiDARiKBZgDCZIHAzQuMqAH6So&sclient=gws-wiz&gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT")
+
+        const data = ["One", "Two", "Three", "Four"];
+
+        googleClickSearch.addEventListener("input"); {
+            const searchTerm(onclick) = googleClickSearch.value.toLowerCase();
+            const filteredData = data.filter (item => item.toLowerCase().includes(searchTerm));
+
+
+            theBar = "";
+
+            filteredData.forEach(item) 
+            {
+                const resultItem = document.createElement("")
+                resultItem.textContent = item;
+                theBar.appendChild(resultItem);
+            };
+        }
+    </script>
+  </body>
+</html>
