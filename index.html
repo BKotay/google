@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./pages/index.css" />
     <title>Google</title>
+    
   </head>
   <body class="page">
     <header>
@@ -83,18 +84,18 @@
       />
     <div id="the__bar">
       <form class="fieldset__form">
-        <label for="search" class="form__label">
+        <label class="form__label">
           <input
             type="text"
             required
             class="form__input"
-            id="clickSearch"
+            id="userinput"
             placeholder="Search Google or Type a URL"
           />
         </label>
       </form>
       <div class="submit__buttons">
-        <button type="submit" class="search__button" a href="#" onclick="googleclick()">Google Search</button>
+        <button type="submit" id="search__button" a href="#">Google Search</button>
         <button 
         type="submit" 
         class="bk__button" 
@@ -113,34 +114,15 @@
         </p>
          <p class="right_footer__links">
           <p> <a class="footer__link" href="https://policies.google.com/privacy?hl=en&fg=1" target="_blank"> Privacy</a></p>
-          <p><a class="footer__link" href="https://policies.google.com/terms?hl=en&fg=1" target="_blank">Terms</a></p>
+          <p><af class="footer__link" href="https://policies.google.com/terms?hl=en&fg=1" target="_blank">Terms</af></p>
           <p><a class="footer__link" href="https://www.google.com/preferences?hl=en&fg=1" target="_blank">Settings</a></p>
          </p>
        </ul>
        </div>
       </ul>
+    
     </footer>
-    <script src="./scripts.js">
-        const googleClickSearch = document.getElementById("clicksearch");
-        const theBar = document.getElementById("the__bar")
-        const url = ("https://www.google.com/search?q=google&sca_esv=9591cd56803235d2&sxsrf=ADLYWIIIIlqJGnzvlSdh7X0RrJu7GvhEmg%3A1728240671096&source=hp&ei=H9wCZ6H1A63jwN4Pwej56Aw&iflsig=AL9hbdgAAAAAZwLqLwFsPgLjLH5UJ-HtGQNi5okmjTsb&ved=0ahUKEwjhgKSatvqIAxWtMdAFHUF0Hs0Q4dUDCB8&oq=googl&gs_lp=Egdnd3Mtd2l6IgVnb29nbCoCCAEyChAjGIAEGCcYigUyERAuGIAEGLEDGNEDGIMBGMcBMhAQABiABBixAxiDARgUGIcCMgsQABiABBixAxiDATIIEAAYgAQYsQMyCxAAGIAEGLEDGIMBMggQABiABBixAzINEAAYgAQYsQMYFBiHAjIIEAAYgAQYsQMyChAAGIAEGEMYigVI8hZQoQNYwA1wAXgAkAEAmAFnoAGyA6oBAzQuMbgBAcgBAPgBAZgCBqAC2gOoAgrCAgcQIxgnGOoCwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICEBAAGIAEGLEDGEMYgwEYigXCAg4QLhiABBixAxiDARiKBZgDCZIHAzQuMqAH6So&sclient=gws-wiz&gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT")
 
-        const data = ["One", "Two", "Three", "Four"];
-
-        googleClickSearch.addEventListener("input"); {
-            const searchTerm(onclick) = googleClickSearch.value.toLowerCase();
-            const filteredData = data.filter (item => item.toLowerCase().includes(searchTerm));
-
-
-            theBar = "";
-
-            filteredData.forEach(item) 
-            {
-                const resultItem = document.createElement("")
-                resultItem.textContent = item;
-                theBar.appendChild(resultItem);
-            };
-        }
-    </script>
+    <script src="scripts.js"></script>
   </body>
 </html>
